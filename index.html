@@ -20,16 +20,48 @@
 </head>
 <body>
 
-    <h2>ETCH A SKETCH</h2>
+    <header>
+        <h2>ETCH A SKETCH</h2>
+    </header>
 
-    <form>
+    <div class="content">
 
-        <input type="number" name = "pixel size" placeholder="enter pixels" class="input">
+        <div class="options">
 
+            <form>
+                <!-- <label for="input">Add Number of pixels : </label> -->
+                   <input type="number" name = "pixel size" placeholder="enter pixels" class="input">
+           
+           
+               </form>
+           
+               <div id="favcolor">
+                <!-- <label for="favcolor">Select your favorite color : </label> -->
+                <input type="color" class="favcolor" name="favcolor" value="#8D8D8D">
+               </div>
+               
+           
+              <div id="random">
+               <!-- <label for="Random Color">Select your favorite color : </label> -->
+              <button class="random" name="Random Color">Choose Random Color</button>
+              </div>
 
-    </form>
+              <div id="erase">
+                <!-- <label for="erase">Erase PixelSpace : </label> -->
+                <button class="erase" name="clear">Erase</button>
+                 </div>
+              
+              <div id="clear">
+               <!-- <label for="clear">Clear PixelSpace : </label> -->
+               <button class="clear" name="clear">Clear</button>
+                </div>
+        </div>
 
-    <button class="clear">Clear</button>
+    </div>
+
+<footer>
+    <p>Darshan Pandya</p>
+</footer>    
     
 </body>
 </html>
