@@ -8,6 +8,7 @@
     width: 100vw;
     height: 100vh;
     font-family: 'Righteous', cursive;
+    overflow-x: hidden;
 }
 
 .content{
@@ -47,9 +48,10 @@ h2{
 }
 
 .pixelspace{
-    width : 27.5rem;
-    display: inline-flex;
-    flex-wrap: wrap;
+    width : 40rem;
+    height: 40rem;
+    /* display: inline-flex;
+    flex-wrap: wrap; */
     align-self: center;
     box-shadow: 2px 2px 20px 1px rgb(195, 195, 195) ;
 }
@@ -65,9 +67,8 @@ h2{
     background-color: white;
 }
 
-.pixels{
-    width: 2.5rem;
-    height: 2.5rem;
+.grid{
+    display: grid;
 }
 
 .erase{
@@ -123,7 +124,7 @@ h2{
 }
 
 footer > p{
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-left: 3rem;
     font-size: 20px;
     padding: 1rem;
