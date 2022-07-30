@@ -20,17 +20,16 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
 
 
+
     for( i = 1 ; i<=input.value**2 ; i++ ){
         const pixels = document.createElement('div');
         pixels.classList.add('pixels')
         pixelSpace.appendChild(pixels);
 
         pixelSpace.classList.add('grid');
-        // pixelSpace.style.gridTemplateColumns = 'repeat(input.value,1fr)';
         pixelSpace.style.gridTemplateColumns = `repeat(${input.value}, 1fr)`
         pixelSpace.style.gridTemplateRows = `repeat(${input.value}, 1fr)`
         
-        // ,gridTemplateRows : repeat(input.value,500px)';
 
         randomColor.addEventListener('click',() => {
 
@@ -40,17 +39,33 @@ form.addEventListener('submit', (e) => {
     
             let bgColor = "rgb(" + r + "," + g + "," + b + ")";
 
+            pixelSpace.addEventListener('click' , () => {
+
                 pixels.addEventListener('mouseover', () => {
                     pixels.style.backgroundColor = bgColor;
+
+                    form.addEventListener('click' , () => {
+                        pixels.style.backgroundColor = 'rgb(255,255,255)';
+                    })
                 })
+
+            })
 
         })
 
         favColor.addEventListener('click' , () => {
 
+            pixelSpace.addEventListener('click' , () => {
+
                 pixels.addEventListener('mouseover', () => {
                     pixels.style.backgroundColor = favColor.value;
+                    
+                    form.addEventListener('click' , () => {
+                        pixels.style.backgroundColor = 'rgb(255,255,255)';
+                    })
                 })
+
+            })
 
         })
 

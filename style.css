@@ -8,7 +8,7 @@
     width: 100vw;
     height: 100vh;
     font-family: 'Righteous', cursive;
-    overflow-x: hidden;
+    background-color: #EEEEEE;
 }
 
 .content{
@@ -25,12 +25,15 @@ h2{
     font-size: 2rem;
     letter-spacing: 0.3rem;
     width: 70vw;
-    margin: 2rem;
+    margin: 2rem auto;
     border-radius: 5px;
     text-shadow: 2px 3px rgb(141, 141, 141);
     /* width: 20rem; */
     padding: 1rem;
-    box-shadow: 2px 2px 20px 1px rgb(195, 195, 195) ;
+    box-shadow: 2px 2px 20px 1px rgb(239, 239, 239) ;
+    border: none;
+    text-align: center;
+    background-color: #BDBDD7;
 
 }
 
@@ -45,15 +48,18 @@ h2{
     border-radius: 5px;
     padding: 3rem;
     box-shadow: 2px 2px 20px 1px rgb(195, 195, 195) ;
+    background-color: #BDBDD7;
 }
 
 .pixelspace{
     width : 40rem;
     height: 40rem;
-    /* display: inline-flex;
-    flex-wrap: wrap; */
     align-self: center;
-    box-shadow: 2px 2px 20px 1px rgb(195, 195, 195) ;
+    border: 2px solid #46466E;
+}
+
+.grid{
+    display: grid;
 }
 
 .input{
@@ -61,14 +67,18 @@ h2{
     height: 2.5rem;
     padding: 0.5rem;
     outline: none;
-    border: 2px solid black;
+    border: none;
     font-size: 1rem;
     border-radius: 5px;
-    background-color: white;
+    /* background-color: rgb(154, 154, 154); */
+    transition: transform 0.5s 0.2s;
+
 }
 
-.grid{
-    display: grid;
+.input:hover{
+    transform: scale(1.05);
+    background-color: #393E46;
+    color: white;
 }
 
 .erase{
@@ -76,12 +86,18 @@ h2{
     height: 2.5rem;
     padding: 0.5rem;
     outline: none;
-    border: 2px solid black;
+    border: none;
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
-    background-color: white;
+    /* background-color: rgb(154, 154, 154); */
+    transition: transform 0.5s 0.2s;
+}
 
+.erase:hover{
+    transform: scale(1.05);
+    background-color: #393E46;
+    color: white;
 }
 
 .clear{
@@ -89,11 +105,18 @@ h2{
     height: 2.5rem;
     padding: 0.5rem;
     outline: none;
-    border: 2px solid black;
+    border: none;
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
-    background-color: white;
+    /* background-color: rgb(154, 154, 154); */
+    transition: transform 0.5s 0.2s;
+}
+
+.clear:hover{
+    transform: scale(1.05);
+    background-color: #393E46;
+    color: white;
 }
 
 .random{
@@ -101,11 +124,18 @@ h2{
     height: 2.5rem;
     padding: 0.5rem;
     outline: none;
-    border: 2px solid black;
+    border: none;
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
-    background-color: white;
+    /* background-color: rgb(154, 154, 154); */
+    transition: transform 0.5s 0.2s;
+}
+
+.random:hover{
+    transform: scale(1.05);
+    background-color: #393E46;
+    color: white;
 }
 
 .favcolor{
@@ -113,10 +143,17 @@ h2{
     height: 2.5rem;
     padding: 0.5rem;
     outline: none;
-    border: 2px solid black;
+    border: none;
     cursor: pointer;
     border-radius: 5px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    transition: transform 0.5s 0.2s;
+}
+
+.favcolor:hover{
+    transform: scale(1.05);
+    background-color: #393E46;
+    color: white;
 }
 
 .colorpixel{
@@ -126,10 +163,11 @@ h2{
 footer > p{
     margin-top: 3rem;
     margin-left: 3rem;
+    margin-bottom: 1rem;
     font-size: 20px;
     padding: 1rem;
-    color: white;
-    background-color: rgb(114, 113, 113);
+    /* background-color: rgb(114, 113, 113); */
     letter-spacing: 0.1rem;
-    width: 20rem;
+    /* width: 20rem; */
+    text-align: center;
 }
