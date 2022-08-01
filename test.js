@@ -45,7 +45,7 @@ form.addEventListener('submit', (e) => {
                     pixels.style.backgroundColor = bgColor;
 
                     form.addEventListener('click' , () => {
-                        pixels.style.backgroundColor = 'rgb(255,255,255)';
+                        pixels.style.backgroundColor = '#ffffff';
                     })
                 })
 
@@ -61,7 +61,7 @@ form.addEventListener('submit', (e) => {
                     pixels.style.backgroundColor = favColor.value;
                     
                     form.addEventListener('click' , () => {
-                        pixels.style.backgroundColor = 'rgb(255,255,255)';
+                        pixels.style.backgroundColor = '#ffffff';
                     })
                 })
 
